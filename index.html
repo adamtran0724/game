@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h1>Crystal Collector</h1>
+	</div>
+	<div class="instructions">
+		<h3>Here's how you play the game</h3>
+		</br>
+		<ol>
+			<li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
+			<li>There are four crystals below.</li>
+			<ul>
+				<li id="blue">Blue</li>
+				<li id="green">Green</li>
+				<li id="red">Red</li>
+				<li id="yellow">Yellow</li>
+			</ul>
+			<li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+			<li>You win the game by matching your total score to the random number.</li>
+			<li>You lose the game if your total score goes above the random number.</li>
+			<li>The value of each crystal is hidden from you until you click on it.</li>
+			<li>Each time when the game starts, the game will change the values of each crystal.</li>
+		</ol>
+	</div>
+	<div class="numberToMatch">
+		<h2>Number To Get:
+			<span id= "randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			</br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="gems">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrG6pyhRqseyQ1W-CnApNOLtJ431palY3vymvph6miP-w8CAt9" class=gemImage id="one" alt="Blue Gem">
+		<img src="http://static1.squarespace.com/static/55eec0c3e4b077f580288013/t/55efecc4e4b08a4b89b9bda1/1475321892938/?format=1500w" class=gemImage id="two" alt="Green Gem">
+		<img src="https://cdn5.vectorstock.com/i/1000x1000/24/44/abstract-red-geometric-triangle-background-vector-8312444.jpg" class=gemImage id= "three" alt="Red Gem">
+		<img src="https://image.shutterstock.com/image-vector/star-icon-vector-classic-rank-260nw-429574270.jpg" class=gemImage id= "four" alt="Yellow Gem">
+	</div>
+	<div class="userTotal">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+
+</body>
+</html>
